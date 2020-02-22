@@ -1,4 +1,4 @@
-import CurrencyMutations  from "./SystemMutations";
+import CurrencyMutations  from "./CurrencyMutations";
 
 export {
     CurrencyMutations,
