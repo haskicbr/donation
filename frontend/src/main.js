@@ -1,6 +1,3 @@
-
-import {SystemMutationTypes} from "./store/mutations/types";
-
 import Vue from 'vue'
 import App from './App.vue'
 
@@ -13,9 +10,5 @@ import vuetify from './plugins/vuetify';
 new Vue({
     vuetify,
     store,
-    beforeCreate() {
-        this.$store.commit(SystemMutationTypes.INITIAL_STORE);
-    },
-
     render: h => h(App),
 }).$mount('#app');
