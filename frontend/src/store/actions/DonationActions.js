@@ -4,7 +4,7 @@ import {DonationFormMutationsTypes} from "../mutations/types";
 
 const actions = {};
 
-actions[DonationActionTypes.SEND_FORM_DONATION] = function ({commit, state}, service) {
+actions[DonationActionTypes.SEND_FORM_DONATION] = function ({commit, state}) {
 
     commit(DonationFormMutationsTypes.CHANGE_LOADED_DONATION_FORM, true);
 
