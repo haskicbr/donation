@@ -6,9 +6,6 @@
     import DonationButton from "./components/DonationButton";
 
     export default {
-        props: {
-            source: String,
-        },
 
         components: {
             DonationButton
