@@ -60,7 +60,7 @@
 
             sendDonation() {
 
-                this.changeLoadForm(false);
+                this.changeLoadForm(true);
 
                 this.$store.dispatch(DonationActionTypes.SEND_FORM_DONATION).then((response) => {
 
