@@ -88,6 +88,20 @@ module.exports = {
         disableHostCheck: true,
         hot: true,
         compress: true,
-        port: 9000
+        port: 9000,
+
+        proxy: {
+            '/api/*': {
+                target: {
+                    host: "localhost",
+                    protocol: 'http:',
+                    port: 3000
+                },
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/api': '/'
+                }
+            }
+        }
     },
 };
