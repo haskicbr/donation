@@ -63,11 +63,12 @@
 
                     if (response.data.ok) {
                         alert("Thank you for your donation!");
+                    } else {
+                        alert("Something went wrong");
                     }
 
                 }).catch(() => {
 
-                    alert("Something went wrong");
 
                 }).finally(() => {
 
