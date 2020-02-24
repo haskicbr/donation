@@ -68,8 +68,7 @@
                     }
 
                 }).catch(() => {
-
-
+                    alert("Something went wrong");
                 }).finally(() => {
 
                    this.changeLoadForm(false);
