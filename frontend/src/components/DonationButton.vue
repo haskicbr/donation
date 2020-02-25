@@ -29,10 +29,6 @@
 
                 let remainder = presetSum % 10;
 
-                if (remainder === 0) {
-                    return presetSum;
-                }
-
                 return presetSum + (10 - remainder);
             }
         },
